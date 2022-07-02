@@ -1,0 +1,36 @@
+[
+    {
+        "image": "img/why_your_business_needs_website.webp",
+        "title":"Why you business needs website during Covid-19?",
+        "caption": "The ability to shop online is a big advantage whether you are buying from a mobile or a computer, this is especially important in 2021 when online shopping is more and more relevant due to the new situation due to covid-19.",
+        "type": "image",
+        "source_type": "link",
+        "source_link": "/website-covid-19.html",
+        "category": "Online Business"
+
+    
+    },
+    {
+        "image": "img/affilate_marketing.webp",
+        "title":"Make money from home(Affilate marketing)",
+        "caption": "It is a field of digital marketing where by promoting products or services on our site, we refer the future customer to the manufacturer's site or the one who offers services. ",
+        "type": "image",
+        "source_type": "link",
+        "source_link": "/afilate_marketing.html",
+        "category": "Online Business"
+
+    
+    },
+    {
+        "image": "img/top_5_indemand_freelancing_skills.jpeg",
+        "title":"Top 5 In-Demand Freelancing Job Skills",
+        "caption": "The advantage of Freelancing is that you have the freedom to determine your working hours, and how much you will charge, whether per hour or project. ",
+        "type": "image",
+        "source_type": "link",
+        "source_link": "/top5-freelancing-skills.html",
+        "category": "Online Business"
+
+    
+    }
+    
+]
