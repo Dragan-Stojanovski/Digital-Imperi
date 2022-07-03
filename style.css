@@ -127,8 +127,9 @@ img {
   height: 9rem;
   width: 100%;
   padding: 0 6rem;
-  z-index: 100;
+  z-index: 150;
   border-bottom:1px solid rgb(93, 93, 93);
+  margin-bottom:70px;
 }
 
 /* nav and stickly class at the same time */
@@ -167,6 +168,7 @@ img {
   text-decoration: none;
   display: block;
   transition: all 0.3s;
+
 }
 
 .nav__link--btn:link,
@@ -1638,6 +1640,13 @@ height:50vh;
       position:relative;
       font-family:var(--font-primary)
       
+      }
+      .whole-wrap h2{
+        font-size:20px;
+      }
+      .whole-wrap p{
+        font-size:16px;
+        margin-top:10px;
       }
 }
 

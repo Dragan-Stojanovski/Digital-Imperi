@@ -6,7 +6,18 @@
         "type": "image",
         "source_type": "link",
         "source_link": "road_web_designer.html",
-        "category": "Online Business"
+        "category": "Digital Education"
+
+    
+    },
+    {
+        "image": "img/5_key_factors_for_a_better_SEO.webp",
+        "title":"5 Key factors for SEO(Search engine optimization);",
+        "caption": "The basics of SEO optimization are quick to learn but going deeper and becoming an expert will take more time. ",
+        "type": "image",
+        "source_type": "link",
+        "source_link": "5_key_factors_for_a_better_SEO.html",
+        "category": "Digital Education"
 
     
     }
