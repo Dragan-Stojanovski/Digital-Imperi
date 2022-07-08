@@ -31,6 +31,17 @@
         "category": "Digital Education"
 
     
+    },
+    {
+        "image": "img/wordpress_for_beginners.jpeg",
+        "title":"WordPress for Beginners",
+        "caption": "Due to the increasing popularity of WordPress and the fact that it is easy to use, over 34% of all websites on the Internet are built using WordPress. ",
+        "type": "image",
+        "source_type": "link",
+        "source_link": "WordPress_for_beginners.html",
+        "category": "Digital Education"
+
+    
     }
   
     
