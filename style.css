@@ -36,7 +36,7 @@ body {
   font-weight: 300;
   color: #444;
   line-height: 1.9;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
 }
 
 /* GENERAL ELEMENTS */
@@ -1814,4 +1814,9 @@ height:50vh;
     color:white;
     text-decoration:none;
   }
+}
+.quote{
+  background-color:rgb(227, 227, 227);
+  border-left:5px solid red;
+  padding:5px;
 }
