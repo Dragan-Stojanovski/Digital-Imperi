@@ -103,7 +103,7 @@ body {
 }
 
 p {
-  color: #666;
+  color: rgb(46, 46, 46);
 }
 
 /* This is BAD for accessibility! Don't do in the real world! */
