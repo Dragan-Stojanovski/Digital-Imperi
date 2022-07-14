@@ -31,63 +31,70 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body onLoad="slider()">
-  <header class="header-blog">
-    <nav class="nav">
-      <img
-        src="img/icons.svg"
-        alt="Bankist logo"
-        class="nav__logo"
-        id="logo"
-        designer="Jonas"
-        data-version-number="3.0"
-      />
-      <ul class="nav__links">
-        <li class="nav__item">
-          <a class="nav__link" href="index.html">Home</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="Services.html">Our Mission</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="Blog.html">Earn Online</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="Blog-2.html">Education</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav__link--btn btn--show-modal" href="#"
-            >Contact</a
-          >
-        </li>
-      
-      </ul>
-      <button class="menu-btn">MENU</button>
-    </nav>
-
- 
-
-  </header>
-
-
-
-
-  <!--
-  <div class="banner-2">
-    <div class="slider-2">
-        <img src="images/01.jpg" id="slideImg">
-    </div>
-    <div class="overlay-2">
-        <div class="content-2">
-         
-            <h1>BLOG</h1>
-            <h3>Blog where you can find usefull information about multyple ways to earn money from Home Webdesign,Development,GraphicDesign,Digital Marketing </h3>
- 
+  <header class="header">
+    <div class="header__container">
+    <!-- Logo -->
+        <a href="index.html" class="header__logo"><img src="img/icons.svg" height="100px"></a>
+      <!-- Hamburger Toggle Button -->
+      <div class="header__menu menu">
+        <div class="menu__icon">
+          <span></span>
         </div>
+        <!-- Replace Your Site Links -->
+        <nav data-sub_menu_auto_close="true" class="menu__body">
+          <ul class="menu__list">
+          
+            <li>
+              <a data-goto=".page__section_1" href="index.html" class="menu__link"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a data-goto=".page__section_2" href="Services.html" class="menu__link"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a data-goto=".page__section_3" href="Blog.html" class="menu__link"
+                >Earn Online</a
+              >
+            </li>
+            <li>
+              <a data-goto=".page__section_3" href="Blog-2.html" class="menu__link"
+                >Education</a
+              >
+            </li>
+           
+            <li>
+              <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Contact</a
+            >
+            </li>
+            <!--
+            <li>
+              <a href="" class="menu__link">Page 1</a>
+              <span class="menu__arrow"></span>
+              <ul class="menu__sub-list">
+                <li>
+                  <a href="" class="menu__sub-link">Section page 1</a>
+                </li>
+                <li>
+                  <a href="" class="menu__sub-link">Section page 2</a>
+                </li>
+                <li>
+                  <a href="" class="menu__sub-link">Section page 3</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="" class="menu__link">Page 2</a>
+            </li>
+          </ul>
+          -->
+        </nav>
+      </div>
     </div>
-</div>
-
--->
-    
+ </header>
 
 
 
