@@ -7,28 +7,29 @@ let cards = []
 function printCards(data) {
     data.forEach(el => {
        
-    let mainWrap=document.createElement("div");
-mainWrap.classList.add("whole-wrap")
-let title=document.createElement("h2")
-let category=document.createElement("h5")
-    let caption=document.createElement("p")
-    let img=document.createElement("img")
-    let link=document.createElement("a")
-    
-        img.src=el.image
-        category.textContent=el.category
-        title.textContent=el.title
-        caption.textContent=el.caption
-        link.textContent="Read More"
-        link.href=el.source_link
-
-
-    mainWrap.appendChild(img);
-    mainWrap.appendChild(category);
-    mainWrap.appendChild(title);
-    mainWrap.appendChild(caption);
-    mainWrap.appendChild(link);
-mainContainer.appendChild(mainWrap);
+		let mainWrap=document.createElement("div");
+		mainWrap.classList.add("whole-wrap")
+		let title=document.createElement("h2")
+		let category=document.createElement("h5")
+			let caption=document.createElement("p")
+			let img=document.createElement("img")
+			let link=document.createElement("a")
+			
+				img.src=el.image
+				category.textContent=el.category
+				title.textContent=el.title
+				caption.textContent=el.caption
+			   
+				link.href=el.source_link
+		
+		
+			link.appendChild(img);
+			link.appendChild(category);
+			link.appendChild(title);
+			link.appendChild(caption);
+			
+			mainWrap.appendChild(link)
+		mainContainer.appendChild(mainWrap);
     })
 }
 

@@ -19,15 +19,16 @@ let category=document.createElement("h5")
         category.textContent=el.category
         title.textContent=el.title
         caption.textContent=el.caption
-        link.textContent="Read More"
+       
         link.href=el.source_link
 
 
-    mainWrap.appendChild(img);
-    mainWrap.appendChild(category);
-    mainWrap.appendChild(title);
-    mainWrap.appendChild(caption);
-    mainWrap.appendChild(link);
+    link.appendChild(img);
+	link.appendChild(category);
+	link.appendChild(title);
+    link.appendChild(caption);
+	
+	mainWrap.appendChild(link)
 mainContainer.appendChild(mainWrap);
     })
 }
