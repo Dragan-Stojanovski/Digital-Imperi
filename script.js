@@ -95,7 +95,7 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
 */
 ///////////////////////////////////////
 // Tabbed component
-
+/*
 tabsContainer.addEventListener('click', function (e) {
   const clicked = e.target.closest('.operations__tab');
 
@@ -208,6 +208,7 @@ imgTargets.forEach(img => imgObserver.observe(img));
 
 ///////////////////////////////////////
 // Slider
+/*
 const slider = function () {
   const slides = document.querySelectorAll('.slide');
   const btnLeft = document.querySelector('.slider__btn--left');
@@ -443,9 +444,104 @@ if (menuLinks.length > 0) {
 }
 
 
+var mainContainer = document.querySelector(".main-container");
+const loadMoreBtn = document.querySelector('.load-more')
+loadMoreBtn.classList.add("btn")
+let cards = []
+
+function printCards(data) {
+    data.forEach(el => {
+       
+    let mainWrap=document.createElement("div");
+mainWrap.classList.add("whole-wrap")
+let title=document.createElement("h2")
+let category=document.createElement("h5")
+    let caption=document.createElement("p")
+    let img=document.createElement("img")
+    let link=document.createElement("a")
+    
+        img.src=el.image
+        category.textContent=el.category
+        title.textContent=el.title
+        caption.textContent=el.caption
+       
+        link.href=el.source_link
+
+
+    link.appendChild(img);
+	link.appendChild(category);
+	link.appendChild(title);
+    link.appendChild(caption);
+	
+	mainWrap.appendChild(link)
+mainContainer.appendChild(mainWrap);
+    })
+}
+
+fetch("data.json")
+.then(res => res.json())
+.then(function(data){
+    printCards(data.slice(0, 4))
+    cards = data.slice(4)
+})
+
+loadMoreBtn.addEventListener('click', function() {
+    printCards(cards.splice(0, 4))
+    if (cards.length <= 0) {
+        loadMoreBtn.style.visibility = 'hidden'
+    }
+})
 
 
 
+
+var mainContainer2 = document.querySelector(".main-container-2");
+const loadMoreBtn2 = document.querySelector('.load-more-2')
+loadMoreBtn.classList.add("btn")
+let cards2 = []
+
+function printCards2(data) {
+    data.forEach(el => {
+       
+		let mainWrap=document.createElement("div");
+		mainWrap.classList.add("whole-wrap")
+		let title=document.createElement("h2")
+		let category=document.createElement("h5")
+			let caption=document.createElement("p")
+			let img=document.createElement("img")
+			let link=document.createElement("a")
+			
+				img.src=el.image
+				category.textContent=el.category
+				title.textContent=el.title
+				caption.textContent=el.caption
+			   
+				link.href=el.source_link
+		
+		
+			link.appendChild(img);
+			link.appendChild(category);
+			link.appendChild(title);
+			link.appendChild(caption);
+			
+			mainWrap.appendChild(link)
+		mainContainer2.appendChild(mainWrap);
+    })
+}
+
+fetch("data-2.json")
+.then(res => res.json())
+.then(function(data){
+    printCards2(data.slice(0, 4))
+    cards2 = data.slice(4)
+})
+
+loadMoreBtn2.addEventListener('click', function() {
+    printCards2(cards2.splice(0, 4))
+    if (cards2.length <= 0) {
+        loadMoreBtn2.style.visibility = 'hidden'
+    }
+})
 
 
 
